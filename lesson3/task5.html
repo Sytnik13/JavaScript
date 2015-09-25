@@ -6,14 +6,17 @@
 </head>
 <body>
     <script>
+        var n = prompt('Введите число для доски: ');
 
-        var y = 8;
-
-        for(var i = 1; i <= y; i++){
-            for(var j = 1; i <= y; j++){
-                document.write('#');
+        for(var i = 0; i < n; i++) {
+            for(var j = 0; j < n; j++) {
+                if((j + i) % 2 === 0) {
+                    document.write('_');
+                } else {
+                    document.write('#');
+                }
             }
-            document.write('#');
+           document.write('<br>');
         }
     </script>
 </body>
