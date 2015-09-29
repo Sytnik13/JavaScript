@@ -6,13 +6,18 @@
 </head>
 <body>
     <script>
-        (function exp(x, n){
+        var x = prompt('Введите число: ');
+        var n = prompt('Введите степень: ');
+        var getPow = function pow(x, n){
             var result = x;
 
             for(var i = 1; i < n; i++){
-
+                result *= x;
             }
-        })();
+            return result;
+        };
+
+        document.write(getPow(x, n));
     </script>
 </body>
 </html>
